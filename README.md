@@ -1,19 +1,19 @@
 # Texas Senate Race
-The 2018 US Senate race between Republican Senator Ted Cruz and Democratic Congressman Beto O'Rourke was one of the most hotly contested political contests of the election. This poll was a collaboration between the New York Times and Siena College in New York. It asked 800 Texans about who they were planning on voting for, along with demographic information like age, sex, and race. Despite Texas being a heavily Republican state, Beto O'Rourke came close to upsetting Cruz with a final share of 48.33% of the vote. The race was made more exciting by polls like the one from the New York Times, which helped to put on display the closeness of the race and the share of undecided voters who could potentially swing the election. Despite the fact that Cruz avoided an upset, the election also displayed political trends that will remain relevant going into the 2020 election. We're going to examine some of those trends within the race using our new data science and visualization skills.
+The 2018 US Senate race between Republican Senator Ted Cruz and Democratic Congressman Beto O'Rourke was one of the most hotly contested political contests of any election. This poll was a collaboration between the New York Times and Siena College in New York. It asked 800 Texans about who they were planning on voting for, along with demographic information such as age, sex, and race. Despite Texas being a heavily Republican state, Beto O'Rourke came close to upsetting Cruz with a final share of 48.33% of the vote. The race was made more exciting by polls like the one from the New York Times, which helped to put on display the closeness of the race and the share of undecided voters who could potentially swing the election. Despite the fact that Cruz avoided an upset, the election also displayed political trends that will remain relevant going into the 2020 election. We're going to examine some of those trends within the race using our new data science and visualization skills.
 
 ### Release 0: Set Up Your Environment
-Using today's lecture notes as a guide, set up your virtual environment and install jupyter and seaborn. Then, create a new jupyter notebook using the `python3` kernel.
+Using today's lecture notes as a guide, set up your virtual environment and install Jupyter and Seaborn. Then create a new Jupyter notebook.
 
 ### Release 1: Clean the Data
 Take a look in the `txsen-2.csv` file and observe the formatting of the data. How can we clean this up?
 * We mostly care about the first five columns (party response, age, education, race, and gender). In addition to these, we would like to be able to look at the region where a voter is located. Read these columns into a pandas dataframe.
-* Some of our column names aren't descriptive. For example, the party a voter has chosen to vote for is marked as response. Rename this column to be "party_response".
+* Some of our column names aren't descriptive. For example, the party a voter has chosen to vote for is marked as `response`. Rename this column to be `party_response`.
 * Some voters chose not to answer some questions, so data is missing for these rows. Remove the voters for whom this is the case.
 
 ### Release 2: Simple Description
 Answer these questions by querying your dataframe and saving the queries and their results in a Jupyter notebook.
 * If all of Texas voted like the respondents in this poll, who would win the race?
-* For each category, what response was most common for those surveyed? That is, which race holds the majority in the election?, What sex?, What level of education?, Etc...
+* For each category, what response was most common for those surveyed? That is, which race holds the majority in the election?, What sex? What level of education?
 * What percentage of those surveyed were undecided?
 * Out of all of our voters, how many did we have to remove from our dataframe because they didn't answer part of the survey?
 * Create a histogram showing where voters lived. Which region was most populous among those surveyed?
@@ -31,4 +31,4 @@ Answer the following questions based on the data from our poll. When coloring th
 * Which age/sex combination was the least decided as a group (i.e. which group is closest to a 50/50 split)? Answer the question with queries, then graph the data.
 
 ### Release 4: Pairplot
-Create a pairplot like the one from our lecture, coloring points by how each voter voted. Try to identify which graph from the pairplot display a strong seperation between red points and blue points. Which two variables does it map? You will likely have to manipulate your graph to make individual points more visible or otherwise find some way to group them. The seaborn documentation will be very helpful here!
+Create a pairplot like the one from our lecture, coloring points by how each voter voted. Try to identify which graph from the pairplot display a strong seperation between red points and blue points. Which two variables does it map? You will likely have to manipulate your graph to make individual points more visible or otherwise find some way to group them. The Seaborn documentation will be very helpful here!
